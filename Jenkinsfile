@@ -2,6 +2,12 @@
 
 node {
 
+    stage('Verify Docker Integration') {
+        steps {
+            sh 'docker version'
+        }
+    }
+
     stage('checkout') {
         checkout scm
     }
