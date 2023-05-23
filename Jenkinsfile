@@ -3,9 +3,7 @@
 node {
 
     stage('Verify Docker Integration') {
-        steps {
-            sh 'docker version'
-        }
+        sh 'docker version'
     }
 
     stage('checkout') {
