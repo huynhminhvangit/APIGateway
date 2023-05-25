@@ -49,7 +49,7 @@ node {
         archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
     }
     stage('quality analysis') {
-        withSonarQubeEnv('http://docker-apigateway-sonar-1:9001') {
+        withSonarQubeEnv('sonarqube') {
             sh "./mvnw -ntp initialize sonar:sonar"
         }
     }
