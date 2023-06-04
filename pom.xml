@@ -696,7 +696,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>apigateway:latest</image>
+                            <image>docker.io/vanghm/apigateway:latest</image>
                         </to>
                         <container>
                             <entrypoint>
