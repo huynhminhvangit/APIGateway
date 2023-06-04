@@ -86,11 +86,11 @@ public class ApiGatewayApp {
         }
         log.info(
             CRLFLogConverter.CRLF_SAFE_MARKER,
-            "\n----------------------------------------------------------\n\t" +
+            "\n-----------------------------API Gateway-----------------------------\n\t" +
             "Application '{}' is running! Access URLs:\n\t" +
             "Local: \t\t{}://localhost:{}{}\n\t" +
             "External: \t{}://{}:{}{}\n\t" +
-            "Profile(s): \t{}\n----------------------------------------------------------",
+            "Profile(s): \t{}\n---------------------------API Gateway------------------------------",
             env.getProperty("spring.application.name"),
             protocol,
             serverPort,
